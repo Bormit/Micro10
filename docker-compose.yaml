@@ -52,7 +52,7 @@ services:
   grafana:
     image: grafana/grafana-oss
     ports:
-      - 3000:3000
+      - "3000:3000"
     restart: unless-stopped
     volumes:
       - ./config/grafana/datasources:/etc/grafana/provisioning/datasources
